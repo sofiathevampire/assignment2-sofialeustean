@@ -1,0 +1,19 @@
+<%- include("templates/header") %>
+
+<div class="container">
+  <h2 class="mb-4">Hello, <%= name %>!</h2>
+
+  <h3 class="mb-3">Bunnies!</h3>
+
+  <div class="row">
+    <% images.forEach(function(img) { %>
+      <div class="col-12 col-md-4 mb-3">
+        <img src="<%= img %>" class="img-fluid rounded" alt="bunny img">
+      </div>
+    <% }); %>
+  </div>
+
+  <a href="/logout" class="btn btn-danger mt-3">Sign out</a>
+</div>
+
+<%- include("templates/footer") %>

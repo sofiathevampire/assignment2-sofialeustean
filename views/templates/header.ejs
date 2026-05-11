@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <nav class="navbar bg-light mb-4">
+      <div class="container-fluid text-center">
+        <a class="navbar-brand w-100 fw-bold fs-3" href="/"> Simple Header </a>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+          <a
+            class="btn btn-outline-primary <%= (active === 'home') ? 'active' : '' %>"
+            href="/"
+            >Home</a
+          >
+
+          <a
+            class="btn btn-outline-primary <%= (active === 'cats') ? 'active' : '' %>"
+            href="/members"
+            >Bunnies</a
+          >
+
+          <a
+            class="btn btn-outline-primary <%= (active === 'login') ? 'active' : '' %>"
+            href="/login"
+            >Login</a
+          >
+
+          <a
+            class="btn btn-outline-primary <%= (active === 'admin') ? 'active' : '' %>"
+            href="/admin"
+            >Admin</a
+          >
+
+          <a
+            class="btn btn-outline-primary <%= (active === '404') ? 'active' : '' %>"
+            href="/does_not_exist"
+            >404</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

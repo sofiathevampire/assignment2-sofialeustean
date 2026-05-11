@@ -1,0 +1,12 @@
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  <span><%= user.name %> (<%= user.user_type %>)</span>
+
+  <span>
+    <a href="/promote/<%= user.email %>" class="btn btn-danger btn-sm"
+      >Promote to Admin</a
+    >
+    <a href="/demote/<%= user.email %>" class="btn btn-success btn-sm"
+      >Demote to User</a
+    >
+  </span>
+</li>

@@ -1,0 +1,13 @@
+<%- include("templates/header") %>
+
+<div class="container">
+  <h1 class="mb-4">Users</h1>
+
+  <ul class="list-group">
+    <% users.forEach(function(user) { %>
+      <%- include("templates/user", { user: user }) %>
+    <% }); %>
+  </ul>
+</div>
+
+<%- include("templates/footer") %>
